@@ -4,5 +4,5 @@
 #
 #    pip-compile
 #
-alive-progress==1.6.2     # via -r requirements.in
 pylast==4.1.0             # via -r requirements.in
+tqdm==4.56.2              # via -r requirements.in

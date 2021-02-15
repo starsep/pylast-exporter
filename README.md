@@ -8,8 +8,9 @@ List of api keys: https://www.last.fm/api/accounts
 To configure script use environment variables
 - PYLAST_EXPORTER_API_KEY
 - PYLAST_EXPORTER_API_SECRET
-- PYLAST_EXPORTER_OUTPUT_FILENAME
 - PYLAST_EXPORTER_USERNAME
+
+Output will be printed on standard output
 
 # Example usage with Docker
 ```
@@ -18,7 +19,6 @@ docker run -it \
     -v $PWD:/pylast-exporter \
     --env PYLAST_EXPORTER_API_KEY=$PYLAST_EXPORTER_API_KEY \
     --env PYLAST_EXPORTER_API_SECRET=$PYLAST_EXPORTER_API_SECRET \
-    --env PYLAST_EXPORTER_OUTPUT_FILENAME=$PYLAST_EXPORTER_OUTPUT_FILENAME \
     --env PYLAST_EXPORTER_USERNAME=$PYLAST_EXPORTER_USERNAME \
     pylast-exporter
 ```
