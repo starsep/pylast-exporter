@@ -15,7 +15,7 @@ Output will be printed on standard output
 # Example usage with Docker
 ```
 docker build -t pylast-exporter .
-docker run -it \
+docker run \
     --env PYLAST_EXPORTER_API_KEY=$PYLAST_EXPORTER_API_KEY \
     --env PYLAST_EXPORTER_API_SECRET=$PYLAST_EXPORTER_API_SECRET \
     --env PYLAST_EXPORTER_USERNAME=$PYLAST_EXPORTER_USERNAME \
