@@ -22,7 +22,7 @@ class Scrobble:
 
 def main():
     lastFMNetwork = pylast.LastFMNetwork(api_key=API_KEY, api_secret=API_SECRET)
-    user = lastFMNetwork.get_user(username=environ.get(USERNAME))
+    user = lastFMNetwork.get_user(username=USERNAME)
 
     with tqdm(file=sys.stderr, total=user.get_playcount()) as bar:
         bar.set_description("Fetching scrobbles from Last.fm")
